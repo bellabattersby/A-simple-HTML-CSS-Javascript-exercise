@@ -12,24 +12,33 @@
     <style></style>
   </head>
   <body>
-    <h1>Updating HTML Content</h1>
+    <h1>FIREWALL</h1>
     <p id="paragraph-1">
-      This is a paragraph.
+    </p>
+    <p id="paragraph-2">
+    </p>
+    <p id="paragraph-3">
     </p>
     <button id="button-1">
-      Button
+      DUMB FUCK CLICK HERE
     </button>
     <!-- script -->
     <script>
-      const lines = "this is how, or is this how, or maybe how, and any how".split(",");
+      const lines = "Nice try, How dumb do you think I am?, I know how dumb you are..., Fuckup, Dumb cunt, Shit for brains, Cum shot gone rotten, Suck a fuck, ERROR IN UR HEAD, Idiotic dipstick".split(",");
+      const linesTwo = "Dumb slut, Icky Dicky, Sick Bitch, Go back and try not to die?, Go get some help, LOL AT U, NO!".split(",");
+      const linesThree = "This is a joke wow, You're a joke, Eat shit and die in my game, Eat a dick, Eat a clit, You look like a poo bum hehe".split(",");
       const button = document.getElementById("button-1");
 
       function getRandomFromList(list) {
         return list[Math.floor(Math.random() * list.length)];
       }
       function changeText() {
-        paragraph = document.getElementById("paragraph-1");
+        const paragraph = document.getElementById("paragraph-1");
+        const paragraphTwo= document.getElementById("paragraph-2");
+        const paragraphThree= document.getElementById("paragraph-3");
         paragraph.innerText = getRandomFromList(lines);
+        paragraphTwo.innerText = getRandomFromList(linesTwo);
+        paragraphThree.innerText = getRandomFromList(linesThree);
       }
       button.addEventListener("click", changeText);
     </script>
